@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author Jegor Bakunin
+* @author Sander Rubenkov
  */
 public class ReadFactory {
 
@@ -23,7 +23,7 @@ public class ReadFactory {
         read.setSurname(input.nextLine());
         System.out.print("Введите телефон: ");
         read.setNumPhone(input.nextLine());
-        System.out.println("\u001B[0mДобавлен пользователь:\u001B[32m " + read.getName() + " " + read.getSurname());
+        System.out.println("Добавлен пользователь: " + read.getName() + " " + read.getSurname());
         return read;
     } 
     

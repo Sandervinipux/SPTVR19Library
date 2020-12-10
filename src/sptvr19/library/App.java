@@ -24,7 +24,7 @@ import tools.Managers.ReaderManager;
 
 /**
  *
- * @author Jegor Bakunin
+* @author Sander Rubenkov
  */
 class App {
     private Book[] books = new Book[100];
@@ -47,23 +47,25 @@ class App {
         boolean repeat = true;
         System.out.println("<--- Библиотека --->");
         do {
-            System.out.println("\u001B[35mСписок задач:");
-            System.out.println("\u001B[36m(\u001B[35m0\u001B[36m) - Выйти из библиотеки");
-            System.out.println("\u001B[36m(\u001B[35m1\u001B[36m) - Добавить новую книгу");
-            System.out.println("\u001B[36m(\u001B[35m2\u001B[36m) - Посмотреть список книг");
-            System.out.println("\u001B[36m(\u001B[35m3\u001B[36m) - Зарегестрировать пользователя");
-            System.out.println("\u001B[36m(\u001B[35m4\u001B[36m) - Вывести списко читателей");
-            System.out.println("\u001B[36m(\u001B[35m5\u001B[36m) - Выдать книгу читателю");
-            System.out.println("\u001B[36m(\u001B[35m6\u001B[36m) - Вернуть книгу в библиотеку");
-            System.out.println("\u001B[36m(\u001B[35m7\u001B[36m) - Список читаемых книг");
-            System.out.println("\u001B[35mВыберите задачу:\u001B[32m");
+            System.out.println("Список задач:");
+            System.out.println("(0) - Выйти из библиотеки");
+            System.out.println("(1) - Добавить новую книгу");
+            System.out.println("(2) - Посмотреть список книг");
+            System.out.println("(3) - Зарегестрировать пользователя");
+            System.out.println("(4) - Вывести списко читателей");
+            System.out.println("(5) - Выдать книгу читателю");
+            System.out.println("(6) - Вернуть книгу в библиотеку");
+            System.out.println("(7) - Список читаемых книг");
+            System.out.println("Выберите задачу:");
             Scanner input = new Scanner(System.in);
             String task = input.nextLine();
+            
             switch (task) {
                 case "0":
                     System.out.println("<--- Выход из программы --->");
                     repeat = false;
                     break;
+                    
                 case "1":
                     System.out.println("<--- Добавить новую книгу --->");
                     Book book = man.createBook();

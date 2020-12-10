@@ -10,20 +10,20 @@ import java.util.Scanner;
 
 /**
  *
- * @author Jegor Bakunin
+* @author Sander Rubenkov
  */
 public class BookFactory {
 
     public Book createBook() {
         Scanner input = new Scanner(System.in);
         Book book = new Book();
-        System.out.print("Введите название кники: ");
+        System.out.print("Введите название книги: ");
         book.setName(input.nextLine());
         System.out.print("Введите Автора: ");
         book.setAuthor(input.nextLine());
         System.out.print("Введите год издание книги: ");
         book.setPublishedYear(input.nextInt());
-        System.out.println("\u001B[0mДобавлена книга:\u001B[32m " + book.getName());
+        System.out.println("Добавлена книга: " + book.getName());
         return book;
 
     }

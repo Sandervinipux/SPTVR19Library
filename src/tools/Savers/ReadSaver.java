@@ -16,7 +16,7 @@ import java.io.ObjectOutputStream;
 
 /**
  *
- * @author Jegor Bakunin
+ * @author Sander Rubenkov
  */
 public class ReadSaver {
     private String fileName = "readers";

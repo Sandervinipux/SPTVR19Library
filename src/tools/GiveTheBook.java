@@ -7,7 +7,7 @@ package tools;
 
 /**
  *
- * @author user
+* @author Sander Rubenkov
  */
 public class GiveTheBook {
     

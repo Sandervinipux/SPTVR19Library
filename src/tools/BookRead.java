@@ -9,7 +9,7 @@ import entity.History;
 
 /**
  *
- * @author user
+* @author Sander Rubenkov
  */
 public class BookRead {
 
@@ -17,7 +17,7 @@ public class BookRead {
         for(int i = 0; i < histories.length; i++){
             if(histories[i] != null 
                     && histories[i].getReturnDate() == null){
-                System.out.printf("\u001B[0m%d. Книгу \"%s\" читает %s %s%n",
+                System.out.printf("%d. Книгу \"%s\" читает %s %s%n",
                         i+1,
                         histories[i].getBook().getName(), 
                         histories[i].getReader().getName(), 

@@ -18,7 +18,7 @@ import java.io.Serializable;
 
 /**
  *
- * @author Jegor Bakunin
+* @author Sander Rubenkov
  */
 public class HistorySaver implements Serializable {
     private String fileName = "Historie";

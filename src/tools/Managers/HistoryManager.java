@@ -9,7 +9,7 @@ import entity.History;
 
 /**
  *
- * @author user
+* @author Sander Rubenkov
  */
 public class HistoryManager {
 
